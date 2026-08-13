@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <a href="{% url 'student_create' %}">Create Student</a>
+        <a href="{% url 'student_update' %}">Update Student</a>
+        <h1>Welcome to Student Dashboard</h1>
+        {% for s in students %}
+        <h3>
+            {{ s.id }} . Name: {{ s.name }} | Age: {{ age }} | Rollno: {{ rollno }}
+        </h3>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            <label for="id">Id: </label>
+            <input type="number" id="id" name="id" /> <br><br>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age"><br><br>
+            <label for="rollno">Roll Number: </label>
+            <input type="text" id="rollno" name="rollno"><br><br>
+            <input type="submit" value="create Student" />
+        </form>
+    </body> 
+</html>
