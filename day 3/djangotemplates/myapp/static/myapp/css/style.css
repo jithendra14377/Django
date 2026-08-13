@@ -1,0 +1,208 @@
+/* ================================
+   Global Styles
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: #333;
+}
+
+
+/* ================================
+   Navigation
+================================ */
+
+nav {
+    background-color: #222;
+    padding: 18px 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+
+/* ================================
+   Home Page
+================================ */
+
+.home-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    background: white;
+    padding: 60px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h1 {
+    color: #4a4a4a;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* ================================
+   Calculator Form
+================================ */
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #4f63c7;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   Calculator Result
+================================ */
+
+.result-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 70px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.result-container h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.result-container .result {
+    color: #667eea;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result-container a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.result-container a:hover {
+    background-color: #4f63c7;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .home-container {
+        margin: 50px auto;
+        padding: 40px 20px;
+    }
+
+    .home-container h1 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 25px;
+        margin: 40px auto;
+    }
+
+    .result-container {
+        padding: 25px;
+        margin: 40px auto;
+    }
+}

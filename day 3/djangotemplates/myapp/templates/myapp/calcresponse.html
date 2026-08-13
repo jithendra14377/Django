@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    </head>
+    <body>
+        {% include 'myapp/nav.html' %}
+        <h1 text="center">Hi {{ name }}</h1> <br> <br>
+        {% if op == 'add' %}
+        <h1>Addition of {{ a }} and {{ b }} is {{ c }}</h1>
+        {% endif %} {% if op == 'sub' %}
+        <h1>Subtraction of {{ a }} and {{ b }} is {{ c }}</h1>
+        {% endif %} {% if op == 'mul' %}
+        <h1>Multiplication of {{ a }} and {{ b }} is {{ c }}</h1>
+        {% endif %} {% if op == 'div' %}
+        <h1>Division of {{ a }} and {{ b }} is {{ c }}</h1>
+        {% endif %}
+    </body>
+</html>
