@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <a href="{% url 'student_create' %}">Create Student</a>
+        <h1>All Students</h1>
+        {% for s in students %}
+        <h3> 
+            {{ s.id }} . {{ s.name }} | <img src="{{ s.photo_url }}" width="200" /> | 
+            <a href="{{ s.resume.url }}">Resume</a>
+        </h3>
+        {% endfor %}
+    </body>
+</html>
