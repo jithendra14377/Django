@@ -1,0 +1,7 @@
+<html>
+    <body>
+        <h1>Hi, {{ request.user.username }}</h1>
+        <h1>Your Email: {{ request.user.email }}</h1>
+        <a href="{% url 'account_logout' %}">Logout</a>
+    </body>
+</html>
